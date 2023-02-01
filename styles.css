@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 4px;
+    text-align: end;
+}
+
+#submit {
+    grid-column: 1 / 3;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.error {
+    text-align: start;
+}
+
+.stuff {
+    display: flex;
+    flex-direction: column;
+}

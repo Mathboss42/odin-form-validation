@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="stuff">
+        <form action="get">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <p class="email error"></p>
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" required>
+            <p class="country error"></p>
+            <label for="zip">ZIP Code</label>
+            <input type="text" name="zip" id="zip" required>
+            <p class="zip error"></p>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" minlength="8" required>
+            <p class="password error"></p>
+            <label for="password-confirmation">Confirm Password</label>
+            <input type="password" name="password-confirmation" id="password-confirmation" required>
+            <p class="password-confirmation error"></p>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        <p id="congrat-msg"></p>
+    </div>
+</body>
+</html>
